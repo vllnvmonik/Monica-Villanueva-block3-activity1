@@ -27,22 +27,36 @@ class MainActivity : AppCompatActivity() {
 
         btnCalculate.setOnClickListener {
             if (heightAndWeightValidation()) {
-                resultDialogBox()
+                resultDialogBox(bmiCalculation())
                 Log.d("CALC", "SDFSDFSF")
             }
         }
 
 
     }
-    private fun resultDialogBox(){
+
+    private fun bmiStatus(){
+        // if underweight, normal, obese
+    }
+    private fun bmiCalculation(): Double {
+        val height = etHeight.text.toString().toDouble()
+        val weight = etWeight.text.toString().toDouble()
+
+        val calculatedBMI = weight / ((height / 100) * (height / 100))
+
+        return calculatedBMI
+    }
+    private fun resultDialogBox(bmiCalculation: Double) {
         val dialog = Dialog(this)
         dialog.requestWindowFeature(Window.FEATURE_NO_TITLE)
         dialog.setCancelable(false)
         dialog.setContentView(R.layout.result_dialog_box)
         dialog.window?.setBackgroundDrawable(ColorDrawable(Color.TRANSPARENT))
 
-//        val tvResult = dialog.findViewById(R.id.tv_result) as TextView
+        val tvResult = dialog.findViewById(R.id.tv_result) as TextView
         val btnDone = dialog.findViewById(R.id.btn_done) as Button
+
+        tvResult.text = bmiCalculation.toString()
 
         btnDone.setOnClickListener {
             dialog.dismiss()
