@@ -8,4 +8,7 @@
     <string name="weight_kg">Weight (kg)</string>
     <string name="kg">kg</string>
     <string name="cm">cm</string>
+    <string name="done">Done</string>
+    <string name="_000">000</string>
+    <string name="result">Result</string>
 </resources>
