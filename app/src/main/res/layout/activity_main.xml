@@ -10,10 +10,10 @@
         android:id="@+id/tv_title"
         android:layout_width="170dp"
         android:layout_height="0dp"
-        android:layout_marginTop="64dp"
+        android:layout_marginTop="92dp"
+        android:fontFamily="@font/fredokasemibold"
         android:text="@string/bmi_calculator"
         android:textSize="25sp"
-        android:fontFamily="@font/fredokasemibold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
@@ -26,21 +26,21 @@
         android:layout_marginBottom="208dp"
         android:background="@drawable/roundborder"
         android:backgroundTint="#3A98B9"
+        android:fontFamily="@font/fredokasemibold"
         android:text="@string/calculate"
         android:textColor="@color/white"
         android:textSize="15sp"
-        android:fontFamily="@font/fredokasemibold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/et_weight"
-        app:layout_constraintVertical_bias="0.821" />
+        app:layout_constraintVertical_bias="0.463" />
 
     <EditText
         android:id="@+id/et_weight"
         android:layout_width="100dp"
         android:layout_height="50dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="16dp"
         android:background="@drawable/roundborder"
         android:backgroundTint="#EEEEEE"
         android:hint="@string/kg"
@@ -52,22 +52,22 @@
         app:layout_constraintTop_toBottomOf="@+id/tv_weight" />
 
     <TextView
-        android:id="@+id/tv_weight"
+        android:id="@+id/tv_height"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="236dp"
         android:fontFamily="@font/fredokaregular"
-        android:text="@string/weight"
+        android:text="@string/height"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/et_height" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/et_height"
         android:layout_width="100dp"
         android:layout_height="50dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="16dp"
         android:background="@drawable/roundborder"
         android:backgroundTint="#EEEEEE"
         android:hint="@string/cm"
@@ -79,16 +79,16 @@
         app:layout_constraintTop_toBottomOf="@+id/tv_height" />
 
     <TextView
-        android:id="@+id/tv_height"
+        android:id="@+id/tv_weight"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="184dp"
+        android:layout_marginTop="48dp"
         android:fontFamily="@font/fredokaregular"
-        android:text="@string/height"
+        android:text="@string/weight"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/et_height" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

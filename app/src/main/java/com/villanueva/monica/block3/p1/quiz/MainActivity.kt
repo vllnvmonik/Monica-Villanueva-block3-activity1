@@ -56,7 +56,8 @@ class MainActivity : AppCompatActivity() {
         val tvResult = dialog.findViewById(R.id.tv_result) as TextView
         val btnDone = dialog.findViewById(R.id.btn_done) as Button
 
-        tvResult.text = bmiCalculation.toString()
+
+        tvResult.text = String.format("%.1f",  bmiCalculation)
 
         btnDone.setOnClickListener {
             dialog.dismiss()

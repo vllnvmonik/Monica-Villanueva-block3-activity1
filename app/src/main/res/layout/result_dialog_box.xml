@@ -33,7 +33,7 @@
             android:layout_marginTop="10dp"
             android:fontFamily="@font/fredokaregular"
             android:text="@string/_000"
-            android:textSize="30sp"
+            android:textSize="40sp"
             tools:ignore="TextSizeCheck" />
 
         <androidx.appcompat.widget.AppCompatButton
