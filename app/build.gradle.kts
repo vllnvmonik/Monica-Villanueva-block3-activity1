@@ -5,12 +5,12 @@ plugins {
 
 android {
     namespace = "com.villanueva.monica.block3.p1.quiz"
-    compileSdk = 33
+    compileSdk = 34
 
     defaultConfig {
         applicationId = "com.villanueva.monica.block3.p1.quiz"
         minSdk = 25
-        targetSdk = 33
+        targetSdk = 34
         versionCode = 1
         versionName = "1.0"
 
